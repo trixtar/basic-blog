@@ -6,7 +6,9 @@
     </head>
     <body>
         <header>
-            <a href="{% url 'post_new' %}" class="add-post"><i class="material-icons">add</i></a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" class="add-post"><i class="material-icons">add</i></a>
+            {% endif %}
             <h1 class="blog-title"><a href="/">yet another blog</a></h1>
         </header>
         {% block content %}

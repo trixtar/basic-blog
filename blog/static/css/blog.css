@@ -118,6 +118,7 @@ header {
 }
 
 .post-detail-text {
+    margin-bottom: 2.4rem;
     font-size: 1.6rem;
 }
 
@@ -154,4 +155,9 @@ header {
 
 .post-form button:hover {
     background-color: #784f9b;
+}
+
+.edit-post-link {
+    font-size: 1.6rem;
+    color: #784f9b;
 }
