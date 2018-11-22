@@ -36,25 +36,34 @@ h1.blog-title {
     color: #784f9b;
 }
 
-.posts-container {
+.post-list-container,
+.post-detail-container {
     height: 100%;
-    padding: 3.2rem;
     background-color: #d4d4d4;
+}
+
+.post-list-container {
+    padding: 3.2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3.2rem;
 }
 
-.post {
+.post,
+.post-detail {
     background-color: #fff;
     border: 4px dashed #784f9b;
     border-radius: 1rem;
+}
+
+.post {
     padding: 2.4rem 1.6rem;
     display: flex;
     flex-direction: column;
 }
 
-.post-title {
+.post-title,
+.post-detail-title {
     margin-bottom: 1.6rem;
 }
 
@@ -70,4 +79,22 @@ h1.blog-title {
     margin-top: auto;
     text-align: right;
     font-size: 1.2rem;
+}
+
+.post-detail-container {
+    padding: 3.2rem;
+}
+
+.post-detail {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 4.8rem;
+}
+
+.post-detail-date {
+    text-align: right;
+}
+
+.post-detail-text {
+    font-size: 1.6rem;
 }
