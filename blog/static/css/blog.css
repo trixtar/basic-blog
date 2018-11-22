@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1.blog-title {
+    padding: 5rem;
+    background-color: #000;
+    text-align: center;
+}
+
+.blog-title a {
+    font-size: 3.6rem;
+    color: #fff;
+}
+
+.blog-title a:hover {
+    color: #784f9b;
+}
+
+.posts-container {
+    height: 100%;
+    padding: 3.2rem;
+    background-color: #d4d4d4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3.2rem;
+}
+
+.post {
+    background-color: #fff;
+    border: 4px dashed #784f9b;
+    border-radius: 1rem;
+    padding: 2.4rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-title {
+    margin-bottom: 1.6rem;
+}
+
+.post-title a {
+    color: #2f2f2f;
+}
+
+.post-title a:hover {
+    color: #784f9b;
+}
+
+.post-date {
+    margin-top: auto;
+    text-align: right;
+    font-size: 1.2rem;
+}
