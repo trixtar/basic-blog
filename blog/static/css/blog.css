@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Material+Icons');
 
 *,
 html,
@@ -21,10 +21,30 @@ a {
     text-decoration: none;
 }
 
-h1.blog-title {
-    padding: 5rem;
+header {
+    height: 15rem;
+    padding: 1.6rem;
     background-color: #000;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-post {
+    display: inline-block;
+    align-self: flex-end;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: right;
+}
+
+.add-post i {
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+.blog-title {
+    align-self: center;
 }
 
 .blog-title a {
@@ -32,14 +52,16 @@ h1.blog-title {
     color: #fff;
 }
 
-.blog-title a:hover {
+.blog-title a:hover,
+.post-title a:hover {
     color: #784f9b;
 }
 
 .post-list-container,
-.post-detail-container {
+.basic-container {
     height: 100%;
     background-color: #d4d4d4;
+    color: #2f2f2f;
 }
 
 .post-list-container {
@@ -50,7 +72,8 @@ h1.blog-title {
 }
 
 .post,
-.post-detail {
+.post-detail,
+.post-form {
     background-color: #fff;
     border: 4px dashed #784f9b;
     border-radius: 1rem;
@@ -63,16 +86,14 @@ h1.blog-title {
 }
 
 .post-title,
-.post-detail-title {
+.post-detail-title,
+.post-form h1,
+.post-form p {
     margin-bottom: 1.6rem;
 }
 
 .post-title a {
     color: #2f2f2f;
-}
-
-.post-title a:hover {
-    color: #784f9b;
 }
 
 .post-date {
@@ -81,11 +102,12 @@ h1.blog-title {
     font-size: 1.2rem;
 }
 
-.post-detail-container {
+.basic-container {
     padding: 3.2rem;
 }
 
-.post-detail {
+.post-detail,
+.post-form {
     margin: 0 auto;
     max-width: 900px;
     padding: 4.8rem;
@@ -97,4 +119,39 @@ h1.blog-title {
 
 .post-detail-text {
     font-size: 1.6rem;
+}
+
+.post-form p {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-form label {
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.post-form input {
+    height: 3.2rem;
+}
+
+.post-form input,
+.post-form textarea {
+    border: 1px solid #2f2f2f;
+    border-radius: 0.3rem;
+    padding: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.post-form button {
+    padding: 0.8rem 1.6rem;
+    border: none;
+    background-color: #000;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.post-form button:hover {
+    background-color: #784f9b;
 }

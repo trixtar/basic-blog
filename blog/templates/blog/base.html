@@ -5,9 +5,10 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
+        <header>
+            <a href="{% url 'post_new' %}" class="add-post"><i class="material-icons">add</i></a>
             <h1 class="blog-title"><a href="/">yet another blog</a></h1>
-        </div>
+        </header>
         {% block content %}
         {% endblock %}
     </body>
